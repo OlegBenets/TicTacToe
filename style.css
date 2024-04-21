@@ -1,0 +1,83 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 54px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+#player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+td:not(:last-child) {
+    border-right: 5px solid white;
+}
+
+tr:not(:last-child) td {
+    border-bottom: 5px solid white;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #007bff; /* Hintergrundfarbe des Buttons - Blau */
+    border: none;
+    color: white;
+    padding: 15px 32px; /* Innenabstand des Buttons */
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px; /* Abrundung der Ecken */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Schatten */
+}
+
+button:hover {
+    background-color: #0056b3; /* Änderung der Hintergrundfarbe beim Hovern */
+}
+
+#player svg {
+    width: 150px;
+    height: 150px;
+    fill: transparent; /* Transparente Füllfarbe für SVG */
+}
+

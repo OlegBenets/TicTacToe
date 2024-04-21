@@ -6,8 +6,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
+    <h1>Tic Tac Toe</h1>
+
+    <div id="player">
+        <svg id="circleSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <circle cx="100" cy="100" r="90" stroke="#00B0FF" stroke-width="20" />
+        </svg>
+    <!-- SVG für das Cross-Symbol -->
     
+        <svg id="crossSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <line x1="30" y1="30" x2="170" y2="170" stroke="#FFC000" stroke-width="20" />
+            <line x1="30" y1="170" x2="170" y2="30" stroke="#FFC000" stroke-width="20" />
+        </svg>
+    </div>
+
+    <div id="content"></div>
+    <div class="center mt-32">
+        <button onclick="restartGame()">Spiel neu starten</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
